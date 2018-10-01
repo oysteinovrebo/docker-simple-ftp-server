@@ -1,14 +1,12 @@
-## -*- docker-image-name: "mauler/simple-ftp-server" -*-
+## -*- docker-image-name: "bouvet/simple-ftp-server" -*-
 
 FROM python:slim
-MAINTAINER Paulo <proberto.macedo@gmail.com>
+MAINTAINER Øystein <oystein.ovrebo@bouvet.no>
 
 ENV FTP_ROOT /ftp-home
 ENV FTP_USER ftp
 ENV FTP_PASS ftp
 ENV FTP_PORT 21
-
-VOLUME /ftp-home
 
 ADD image/root/ /
 
