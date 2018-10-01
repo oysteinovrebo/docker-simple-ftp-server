@@ -1,4 +1,4 @@
-## -*- docker-image-name: "bouvet/simple-ftp-server" -*-
+## -*- docker-image-name: "oysteinovrebo/simple-ftp-server" -*-
 
 FROM python:slim
 MAINTAINER Øystein <oystein.ovrebo@bouvet.no>
