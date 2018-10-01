@@ -1,11 +1,9 @@
 simple-ftp-server
 ===================
 
-Simple FTP server using pyftpdlib, for simple use case eg upgrade your wordpress plugins locally.
+Simple FTP server using pyftpdlib, for development use
 
-Based on:
-
-https://github.com/giampaolo/pyftpdlib/blob/master/demo/basic_ftpd.py
+Fork of https://github.com/mauler/docker-simple-ftp-server, using passive mode ports
 
 
 How to use
@@ -14,12 +12,8 @@ How to use
 Simple command line usage:
 
 ```
-docker run -p 11021:21 -it --rm -e FTP_USER=scott -e FTP_PASS=tiger mauler/simple-ftp-server
+docker build -t [image name] .
+docker run --name [container name] -p 21:21 -p 42000-42100:42000-42100 -d [image name]
 ```
 
-You can test using:
-```
-ftp localhost 11021
-```
-
-*Based on image m-creations/docker-openwrt-ftp*
+You can test using Filezilla to localhost using username = "ftp", password = "ftp"
