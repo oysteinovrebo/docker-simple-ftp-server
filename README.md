@@ -3,7 +3,7 @@ simple-ftp-server
 
 Simple FTP server using pyftpdlib, for development use
 
-Fork of https://github.com/mauler/docker-simple-ftp-server, using passive mode ports
+Fork of https://github.com/mauler/docker-simple-ftp-server, using passive mode ports and no docker volume. 
 
 
 How to use
